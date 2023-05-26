@@ -85,6 +85,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-list .header-link:hover,
@@ -149,13 +151,13 @@ img {
 .hero-section {
   padding: 188px 0;
   margin: 0 auto;
-  max-width: 1158px;
+  max-width: 1440px;
   background-color: var(--main-text-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -382,7 +384,7 @@ img {
 }
 
 .social-icon {
-  fill: currentColor;
+  fill: var(--primary-background-color);
 }
 
 /*-----5 SECTION CUSTOMERS-----*/
@@ -497,6 +499,16 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.gallery-item-active {
+  display: block;
+}
+
+.gallery-item-active:hover,
+.gallery-item-active:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .gallery-item-text {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -530,7 +542,7 @@ img {
 
 .footer-container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .footer-logo-container {
@@ -572,6 +584,7 @@ img {
 }
 
 .socialmedia-text {
+  margin-bottom: 16px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -585,7 +598,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   margin-top: 8px;
 }
 
@@ -611,5 +624,5 @@ img {
 }
 
 .ft-social-icon {
-  fill: currentColor;
+  fill: var(--primary-background-color);
 }
